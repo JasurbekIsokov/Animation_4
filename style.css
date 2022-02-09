@@ -1,0 +1,119 @@
+body {
+  background: #ececec;
+}
+
+.ellipces {
+  left: 0;
+  top: 50%;
+  right: 0;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.ellipces__circle {
+  left: 0;
+  right: 0;
+  padding: 0;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  position: relative;
+  border-radius: 50%;
+  list-style: none;
+  box-sizing: content-box;
+}
+
+.ellipce {
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin: -15px;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.ellipce-1 {
+  transform: rotate(0deg) translate(75px);
+  background-color: #886477;
+  animation: dotDance 0.8s cubic-bezier(0.77, 0.1, 0.175, 1) infinite 0s
+      alternate,
+    changeIndex 0.2s linear 1.2s infinite reverse;
+}
+
+.ellipce-2 {
+  transform: rotate(45deg) translate(75px);
+  background-color: #49dad6;
+  animation: dotDance 0.8s cubic-bezier(0.77, 0.1, 0.175, 1) infinite 0s
+      alternate,
+    changeIndex 0.2s linear 2.4s infinite reverse;
+}
+
+.ellipce-3 {
+  transform: rotate(90deg) translate(75px);
+  background: #9bd7cd;
+  animation: dotDance 0.8s cubic-bezier(0.77, 0.1, 0.175, 1) infinite 0s
+      alternate,
+    changeIndex 0.2s linear 3.6s infinite reverse;
+}
+
+.ellipce-4 {
+  transform: rotate(135deg) translate(75px);
+  background: #979588;
+  animation: dotDance 0.8s cubic-bezier(0.77, 0.1, 0.175, 1) infinite 0s
+      alternate,
+    changeIndex 0.2s linear 4.8s infinite reverse;
+}
+
+.ellipce-5 {
+  transform: rotate(180deg) translate(75px);
+  background: #8e614d;
+  animation: dotDance 0.8s cubic-bezier(0.77, 0.1, 0.175, 1) infinite 0s
+      alternate,
+    changeIndex 0.2s linear 6s infinite reverse;
+}
+
+.ellipce-6 {
+  transform: rotate(225deg) translate(75px);
+  background: #f4a53f;
+  animation: dotDance 0.8s cubic-bezier(0.77, 0.1, 0.175, 1) infinite 0s
+      alternate,
+    changeIndex 0.2s linear 7.2s infinite reverse;
+}
+
+.ellipce-7 {
+  transform: rotate(270deg) translate(75px);
+  background: #4e9cc5;
+  animation: dotDance 0.8s cubic-bezier(0.77, 0.1, 0.175, 1) infinite 0s
+      alternate,
+    changeIndex 0.2s linear 8.4s infinite reverse;
+}
+
+.ellipce-8 {
+  transform: rotate(315deg) translate(75px);
+  background: #804000;
+  animation: dotDance 0.8s cubic-bezier(0.77, 0.1, 0.175, 1) infinite 0s
+      alternate,
+    changeIndex 0.2s linear 9.6s infinite reverse;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dotDance {
+  0% {
+    transform: translate(0%) scale(4);
+  }
+}
+@keyframes changeIndex {
+  0%,
+  100% {
+    z-index: 2;
+  }
+}
